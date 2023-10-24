@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --darkCyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --veryDarkBlue: hsl(212, 21%, 14%);
+  --darkGrayishBlue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+  --grey: #999b9e;
+  --defaultSize: 14px;
+  --Montserrat: "Montserrat", sans-serif;
+  --Fraunces: "Fraunces", serif;
+}
+
+html,
+body {
+  font-size: var(--defaultSize);
+  background: var(--cream);
+  font-family: var(--Montserrat);
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  cursor: pointer;
+}
+
+.card {
+  background: var(--white);
+  display: flex;
+  border-radius: 0.7rem;
+  width: 600px;
+  height: 450px;
+}
+
+.img-container {
+  width: 50%;
+  background: url("../images/image-product-desktop.jpg") no-repeat;
+  background-size: cover;
+  border-radius: 0.7rem 0 0 0.7rem;
+}
+
+.text-container {
+  width: 50%;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+h1 {
+  width: 85%;
+  line-height: 1.1;
+  font-family: var(--Fraunces);
+}
+
+h2 {
+  display: inline-block;
+  font-family: var(--Montserrat);
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 5px;
+  font-weight: 500;
+  color: var(--grey);
+}
+
+p {
+  line-height: 1.5;
+  color: var(--grey);
+}
+
+button {
+  width: 100%;
+  height: 48px;
+  background-color: var(--darkCyan);
+  color: var(--white);
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+button span {
+  margin-left: 0.7em;
+}
+
+.price-tag {
+  display: flex;
+}
+
+.price-tag span:nth-child(1) {
+  color: var(--darkCyan);
+  font-size: 2em;
+  font-family: var(--Fraunces);
+}
+
+.price-tag span:nth-child(2) {
+  text-decoration: line-through;
+  font-size: 14px;
+  margin-left: 2em;
+  align-self: center;
+  color: var(--grey);
+}
+
+.attribution {
+  position: fixed;
+  bottom: 10px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #6495ed;
+}
